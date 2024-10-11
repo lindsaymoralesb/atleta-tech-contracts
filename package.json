@@ -15,9 +15,16 @@
     "url": "https://github.com/lindsaymoralesb/atleta-tech-contracts/issues"
   },
   "homepage": "https://github.com/lindsaymoralesb/atleta-tech-contracts#readme",
-  "description": "",
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.12"
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.3",
+    "hardhat": "^2.22.13",
+    "hardhat-deploy": "^0.12.4",
+    "hardhat-deploy-ethers": "^0.4.2"
+  },
+  "directories": {
+    "test": "test"
   }
 }
