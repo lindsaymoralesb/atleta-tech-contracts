@@ -14,7 +14,7 @@ const config: HardhatUserConfig = {
   solidity: {
     version: '0.8.27',
   },
-  defaultNetwork: "base-local",
+  defaultNetwork: "base-sepolia",
   namedAccounts: {
     deployer: {
       // By default, it will take the first Hardhat account as the deployer
@@ -40,6 +40,21 @@ const config: HardhatUserConfig = {
       accounts: [process.env.WALLET_KEY as string],
       gasPrice: 1000000000,
     },
+  },
+  etherscan: {
+    apiKey: {
+      "base-sepolia": process.env.APIKEY as string,
+     },
+    customChains: [
+      {
+        network: "base-sepolia",
+        chainId: 84532,
+        urls: {
+          apiURL: "https://api-sepolia.basescan.org/api",
+          browserURL: "https://sepolia.basescan.org"
+        }
+      }
+    ]
   },
 };
 
