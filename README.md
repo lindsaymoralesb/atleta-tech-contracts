@@ -9,9 +9,5 @@ npx hardhat help
 npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
-<<<<<<< HEAD
-npx hardhat ignition deploy ./ignition/modules/AtletaTech.ts
-=======
 npx hardhat ignition deploy ./ignition/modules/Athlete.ts
->>>>>>> 778ecee5151842bfe1d7105a889f3ad45ba82d09
 ```
